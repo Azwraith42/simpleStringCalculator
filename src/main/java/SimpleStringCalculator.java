@@ -5,12 +5,11 @@ import org.apache.commons.lang3.StringUtils;
 public class SimpleStringCalculator {
 
 	public static int add(String numbers) {
-		final String delims = "[/\\\\;,\n]+";
-		int total = 0;
 		
+		int total = 0;
 		if(numbers == ""){return 0;}
 		
-		// split string on delimiter
+		final String delims = "[/\\\\;,\n]+";
 		String[] tokens = numbers.split(delims);
 		
 		
