@@ -59,7 +59,6 @@ public class calculatorTest {
 	
 	@Test(expected = RuntimeException.class)
 	public void negativesNotAllowed(){
-		final int result = SimpleStringCalculator.add("2,-6");
-		assertEquals(3, result);
+		SimpleStringCalculator.add("2,-6");
 	}
 }
